@@ -154,10 +154,18 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
   @include open-sans(semibold);
   border: 0 none;
   @include border-radius(0 5px 5px 0);
+
+  &:after {
+    content: "";
+    @include absolute-center();
+    width: 0;
+    height: 0;
+    @include border-radius(50%);
+    background: orange;
+    @include transition(.3s);
+  }
+
 }
 
-.filter__choose-input {
-  position: absolute;
-  top: 0;
-  left: -9999px;
-}
+
+
