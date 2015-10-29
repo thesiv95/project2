@@ -155,3 +155,9 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
   border: 0 none;
   @include border-radius(0 5px 5px 0);
 }
+
+.filter__choose-input {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
