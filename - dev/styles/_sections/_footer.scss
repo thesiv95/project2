@@ -1,0 +1,44 @@
+.footer {
+  background: url("/img/bg/footer_bgpic.png") center center;
+  position: relative;
+}
+
+.footer__top {
+  padding-top: 34px;
+}
+
+.footer__left {
+  width: 45%;
+  float: left;
+  padding-top: 34px;
+}
+
+.footer__right {
+  width: 55%;
+  float: left;
+  text-align: right;
+}
+
+.logo__footer {
+  .logo-img {
+    max-width: 225px;
+  }
+}
+
+.socials_footer {
+  margin-bottom: 21px;
+
+  .socials__link {
+    width: 45px;
+    height: 45px;
+    background: $white;
+    display: block;
+    text-indent: -9999px;
+  }
+
+  .socials__footer {
+    margin-left: 26px;
+  }
+
+
+}
