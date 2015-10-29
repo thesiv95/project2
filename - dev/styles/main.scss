@@ -18,3 +18,25 @@
 @import "_misc/adjustment";
 
 
+/* --------- miscellaneous icons --------- */
+
+$misc-sprite: sprite-map('icons/_misc/*.png', $spacing: 70px);
+
+/* --------- common colors --------- */
+
+$black: #000000;
+$orange: #ff6600;
+
+/* --------- header --------- */
+
+@import "_sections/header";
+
+/* --------- nav --------- */
+
+@import "_sections/nav";
+
+/* --------- breadcrumbs --------- */
+
+@import "_sections/breadcrumbs";
+
+
