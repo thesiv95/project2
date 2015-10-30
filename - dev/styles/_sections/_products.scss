@@ -100,3 +100,126 @@
   color: $black;
   @include open-sans(semibold);
 }
+
+/***********Description*********/
+
+.products__desc {
+  float: left;
+  width: 380px;
+  margin-left: 21px;
+}
+
+.products__desc-title {
+  font-size: 16px;
+  line-height: 18px;
+  @include open-sans(semibold);
+  color: #010101;
+  margin-bottom: 20px;
+  padding: 7px;
+}
+
+.products__desc-options {
+  margin-bottom: 14px;
+}
+
+
+.products__option-key {
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.products__option-value {
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/*******rating, stars*******/
+
+$stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
+
+.products__rating-stars {
+  @include inlineblock(middle);
+}
+
+.products__rating-stars-item {
+  @include inlineblock(middle);
+  @include get-sprite($stars-map, empty);
+
+  &.products__rating-stars-item_filled {
+    @include get-sprite($stars-map, filled);
+  }
+
+}
+
+.products__rating-amount {
+  @include inlineblock(middle);
+  color: #fbfbfb;
+  font-size: 12px;
+  line-height: 15px;
+  width: 30px;
+  background: #b5beca;
+  @include border-radius(20px);
+  margin-left: 8px;
+  text-align: center;
+  @include open-sans(semibold);
+  margin-top: 4px;
+}
+
+.products__right {
+  position: absolute;
+  top: 23px;
+  bottom: 23px;
+  right: 23px;
+  width: 123px;
+  text-align: right;
+}
+
+.products__info {
+  padding-left: 25px;
+  border-left: 1px solid $grey;
+  height: 100%;
+}
+
+.products__info-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.products__price {
+    color: $black;
+    font-size: 20px;
+    line-height: 22px;
+    @include open-sans(semibold);
+}
+
+.products__buy-btn {
+  @include inlineblock;
+  text-decoration: none;
+  padding: 9px 12px;
+  @include open-sans(bold);
+  @include border-radius(4px);
+  background: $orange;
+  color: $white;
+  margin-bottom: 9px;
+}
+
+.products__avaliability {
+  @include open-sans(bold);
+  font-size: 12px;
+  line-height: 14px;
+  color: #7f7f7f;
+
+  &:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    @include border-radius(50%);
+    color: #60ac49;
+    @include inlineblock(middle);
+    margin-right: 8px;
+  }
+
+}
