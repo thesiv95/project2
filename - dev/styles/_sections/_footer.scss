@@ -43,16 +43,26 @@
     margin-left: 26px;
   }
 
+  $dark-socials-map: sprite-map('icons/socials2/*.png', $spacing: 70px);
   $items: fb, vk, tw;
   @each $item in $items {
     .socials__item_#{$item} {
       .socials__link {
         &:after {
-          $dark-socials-map: sprite-map('icons/socials2/*.png', $spacing: 70px);
+
           @include get-sprite($dark-socials-map, $item);
           content: '';
           @include absolute-center;
         }
+
+        &:hover {
+          &:after {
+            $icon-name: $item + '-hover';
+            @include get-sprite($dark-socials-map, $icon-name);
+          }
+        }
+
+
       }
     }
   }

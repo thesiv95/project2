@@ -14,6 +14,28 @@ block content
 
 				.content
 					.sort
+						.sort__left
+							.sort__select-wrap
+								.sort__title
+									| Сортировать по
+								.sort__select
+									select.sort__select-elem
+										- var options = ["по цене", "по популярности"]
+										each option in options
+											option(value="")= option
+						.sort__right
+							.sort__title
+								| Вид каталога
+							.sort__view
+								ul.sort__view-list
+									- var items = ["rows", "grids", "lines"]
+									each item in items
+										li(class="sort__view sort__view_" + item data-view= item)
+											a(href="#").sort__view-link
+												.sort__view-icon
+
+
+
 					.products
 			.attention
 				.main-title
