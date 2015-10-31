@@ -159,15 +159,15 @@
 													<div class="filter__slider-displays">
 														<div class="filter__slider-left">
 															<div class="filter__slider-text">от</div>
-															<input name="" type="text" placeholder="" class="filter__slider-input filter__slider-input-from">
+															<input name="" type="text" placeholder="" value="" class="filter__slider-input filter__slider-input-from">
 														</div>
 													</div>
 													<div class="filter__slider-right">
 														<div class="filter__slider-text">до</div>
-														<input name="" type="text" placeholder="" class="filter__slider-input filter__slider-input-to">
+														<input name="" type="text" placeholder="" value="" class="filter__slider-input filter__slider-input-to">
 													</div>
 												</div>
-												<div class="filter__slider-element"></div>
+												<div data-min="0" data-max="30000" class="filter__slider-element"></div>
 											</div>
 										</li>
 										<li class="filter__item">
@@ -961,6 +961,7 @@
 			window.jQuery || document.write('<script src="/js/_vendors/jquery-1.11.3.min.js"><\/script>');
 			
 		</script>
+		<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 		<script src="js/plugins.min.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>
