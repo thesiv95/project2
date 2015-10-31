@@ -67,6 +67,13 @@
 .products__slideshow-item {
   margin-left: 15px;
   float: left;
+
+  &:active {
+    .products__slideshow-link {
+      border-color: $orange;
+    }
+  }
+
 }
 
 .products__slideshow-link {
