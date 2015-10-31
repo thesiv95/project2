@@ -30,14 +30,14 @@ block content
 								ul.sort__view-list
 									- var items = ["rows", "grids", "lines"]
 									each item in items
-										li(class="sort__view sort__view_" + item data-view= item)
+										li(class="sort__view-item sort__view_" + item data-view= item)
 											a(href="#").sort__view-link
 												.sort__view-icon
 
 
 
 					.products
-						ul.products__list.products__list-lines
+						ul.products__list#products-list
 							- for (var i = 0; i < 9; i++)
 								li.products__item
 									.products__item-inner
@@ -64,12 +64,12 @@ block content
 															.products__option-key= item
 															.products__option-value= options[item]
 												div(class="products__rating" data-rating="3")
-													//ul.products__rating-stars
-													//	li.products__rating-stars-item.products__rating-stars-item_filled
-													//	li.products__rating-stars-item.products__rating-stars-item_filled
-													//	li.products__rating-stars-item.products__rating-stars-item_filled
-													//	li.products__rating-stars-item
-													//	li.products__rating-stars-item
+													ul.products__rating-stars
+														li.products__rating-stars-item.products__rating-stars-item_filled
+														li.products__rating-stars-item.products__rating-stars-item_filled
+														li.products__rating-stars-item.products__rating-stars-item_filled
+														li.products__rating-stars-item
+														li.products__rating-stars-item
 													.products__rating-amount 3
 										.products__right
 											.products__info
