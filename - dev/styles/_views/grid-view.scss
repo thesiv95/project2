@@ -85,6 +85,19 @@
     @include clearfix;
     color: $black;
     font-size: 14px;
+    display: block;
+  }
+
+  .products__option-key {
+    display: inline;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .products__option-value {
+    display: inline;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .products__desc-options {
@@ -104,13 +117,15 @@
     float: right;
   }
 
+  .products__option-item_colored {
+    background: #e6e6e6;
+
+  }
+
+
 }
 
 
-.products__option-item_colored {
-  background: #e6e6e6;
-  
-}
 
 
 

@@ -199,6 +199,10 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
     @include open-sans(semibold);
 }
 
+.products__option-item_colored {
+  background: #e6e6e6;
+}
+
 .products__buy-btn {
   @include inlineblock;
   text-decoration: none;
@@ -208,6 +212,33 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
   background: $orange;
   color: $white;
   margin-bottom: 9px;
+}
+
+.products__option-item {
+  @include clearfix;
+  color: $black;
+  font-size: 14px;
+  display: block;
+}
+
+.products__option-key {
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.products__option-value {
+  display: inline;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.products__option-key {
+  float: left;
+}
+
+.products__option-value {
+  float: right;
 }
 
 .products__avaliability {
