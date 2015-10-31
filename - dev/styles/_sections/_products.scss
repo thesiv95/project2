@@ -227,3 +227,8 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
   }
 
 }
+
+/************other-views***************/
+
+@import "../_views/grid-view";
+@import "../_views/line-view";
