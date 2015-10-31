@@ -1,9 +1,10 @@
 .pagination {
   text-align: right;
+  float: right;
   @include inlineblock;
 }
 
-.pagination-item {
+.pagination__item {
   width: 26px;
   height: 26px;
   @include inlineblock;
@@ -13,7 +14,7 @@
   overflow: hidden;
 }
 
-.pagination-link {
+.pagination__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,4 +22,28 @@
   bottom: 0;
   display: block;
   background: $white;
+
+  &:hover {
+    background: #e0e0e0;
+  }
+
+}
+
+.pagination__mark {
+  @include absolute-center;
+  line-height: 26px;
+  text-align: center;
+  @include open-sans(bold);
+  font-size: 12px;
+  color: #7f7f7f;
+}
+
+$pagination-map: sprite-map('icons/paginator/*.png', $spacing: 70px);
+
+@each $item in (prev, next) {
+  .pagination__item_#{$item} {
+    .pagination__mark {
+      @include get-sprite($pagination-map, $item);
+    }
+  }
 }
