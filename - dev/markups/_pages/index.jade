@@ -63,13 +63,13 @@ block content
 														li(class="products__option-item" + (!(index++ % 2) ? ' products__option-item_colored' : '' ))
 															.products__option-key= item
 															.products__option-value= options[item]
-												.products__rating
-													ul.products__rating-stars
-														li.products__rating-stars-item.products__rating-stars-item_filled
-														li.products__rating-stars-item.products__rating-stars-item_filled
-														li.products__rating-stars-item.products__rating-stars-item_filled
-														li.products__rating-stars-item
-														li.products__rating-stars-item
+												div(class="products__rating" data-rating="3")
+													//ul.products__rating-stars
+													//	li.products__rating-stars-item.products__rating-stars-item_filled
+													//	li.products__rating-stars-item.products__rating-stars-item_filled
+													//	li.products__rating-stars-item.products__rating-stars-item_filled
+													//	li.products__rating-stars-item
+													//	li.products__rating-stars-item
 													.products__rating-amount 3
 										.products__right
 											.products__info
