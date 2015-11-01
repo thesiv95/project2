@@ -259,7 +259,7 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
   color: #7f7f7f;
 
   &:before {
-    content: '';
+    content: "";
     width: 7px;
     height: 7px;
     @include border-radius(50%);

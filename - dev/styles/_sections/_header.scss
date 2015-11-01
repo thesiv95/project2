@@ -1,5 +1,5 @@
 .header {
-
+  @include clearfix;
 }
 
 /* ============== header-top ============= */
@@ -31,8 +31,13 @@
   text-indent: -9999px;
 }
 
-.socials-icon {
+.socials__icon {
   @include absolute-center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
 $socials: fb, vk, tw;
@@ -89,6 +94,8 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 .header__bottom {
   background: #f4f4f4;
   padding: 29px 0;
+  width: 1349px;
+  height: 94px;
 }
 
 .logo {

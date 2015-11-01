@@ -3,15 +3,8 @@
   font-size: 14px;
 
   &:before {
-    content: '>';
+    content: '';
     @include inlineblock(middle);
-  }
-
-  &:first-child {
-    &:before {
-      content: '';
-      display: none;
-    }
   }
 
   &.active {
@@ -19,6 +12,12 @@
       color: $orange;
       text-decoration: underline;
     }
+
+    &:before {
+      content: '>';
+      @include inlineblock(middle);
+    }
+
   }
 }
 

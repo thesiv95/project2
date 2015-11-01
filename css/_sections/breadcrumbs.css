@@ -8,7 +8,7 @@ Error: Undefined mixin 'inlineblock'.
 3:   font-size: 14px;
 4: 
 5:   &:before {
-6:     content: '>';
+6:     content: '';
 7:     @include inlineblock(middle);
 
 Backtrace:
@@ -69,4 +69,4 @@ C:/Ruby21-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'inlineblock'.\A         on line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss, in `inlineblock'\A         from line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss\A \A 1: .breadcrumbs__item {\A 2:   @include inlineblock(middle);\A 3:   font-size: 14px;\A 4: \A 5:   &:before {\A 6:     content: '>';\A 7:     @include inlineblock(middle);"; }
+  content: "Error: Undefined mixin 'inlineblock'.\A         on line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss, in `inlineblock'\A         from line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss\A \A 1: .breadcrumbs__item {\A 2:   @include inlineblock(middle);\A 3:   font-size: 14px;\A 4: \A 5:   &:before {\A 6:     content: '';\A 7:     @include inlineblock(middle);"; }
