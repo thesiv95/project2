@@ -41,3 +41,20 @@ $grey: #dee1e4;
 
 @import "_sections/**/*";
 
+/*-- placeholder: chrome, firefox --*/
+
+
+.search__form-input::-webkit-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.search__form-input:-moz-placeholder {
+  @include open-sans(light);
+  font-size: 14px;
+}
+
+.filter__slider-input {
+  color: #333333;
+  @include open-sans(semibold);
+  font-size: 14px;
+}
