@@ -68,7 +68,7 @@
   margin-left: 15px;
   float: left;
 
-  &:active {
+  &.active {
     .products__slideshow-link {
       border-color: $orange;
     }
