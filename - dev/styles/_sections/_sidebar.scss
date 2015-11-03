@@ -167,20 +167,15 @@
 /********checkboxes*********/
 
 .filter__choose_checkboxes {
-
   .filter__choose-input {
     &:checked + .filter__choose-elem {
       background: $orange;
-      opacity: 1;
+
+      &:after {
+        opacity: 1;
+      }
     }
-
-
-    &:after {
-      opacity: 1;
-    }
-
   }
-
 
   .filter__choose-elem {
     width: 20px;
@@ -188,21 +183,19 @@
     @include border-radius(4px);
     background: $grey;
     @include transition(.3s);
-    border: none;
-    opacity: 1;
+    border: 0 none;
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       @include absolute-center;
+      opacity: 0;
       @include transition(.3s);
       @include get-sprite($misc-sprite, checkbox);
       @include border-radius(0);
-      width: 20px !important;
-      height: 20px !important;
-      opacity: 1;
+      width: 13px !important;
+      height: 10px !important;
     }
-
   }
 }
 

@@ -2,10 +2,6 @@
   margin-bottom: 50px;
 }
 
-.products__list-rows {
-
-}
-
 .products__list {
   border: 1px solid $grey;
   @include border-radius(7px);
@@ -133,10 +129,16 @@
   padding: 7px;
 }
 
-.products__desc-options {
-  margin-bottom: 14px;
+.products__desc-text {
+  font-size: 14px;
+  line-height: 20px;
+  @include open-sans(regular);
+  color: #333333;
 }
 
+.products__desc-options {
+  display: none;
+}
 
 .products__option-key {
   display: inline;
@@ -223,6 +225,7 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
   padding: 9px 12px;
   @include open-sans(bold);
   @include border-radius(4px);
+  font-size: 15px;
   background: $orange;
   color: $white;
   margin-bottom: 9px;

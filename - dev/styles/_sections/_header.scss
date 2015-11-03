@@ -1,11 +1,10 @@
 .header {
-  @include clearfix;
+  background: #ffffff;
 }
 
-/* ============== header-top ============= */
+/* --------- header - top --------- */
 
 .header__top {
-  background: #ffffff;
   border-bottom: 1px solid #ebedef;
   padding: 23px 0;
 }
@@ -13,12 +12,10 @@
 .socials__item {
   @include inlineblock(middle);
   margin-left: 12px;
-  margin-bottom: 28px;
 
   &:first-child {
     margin-left: 0;
   }
-
 }
 
 .socials__link {
@@ -28,16 +25,10 @@
   @include border-radius(50%);
   background: #333333;
   position: relative;
-  text-indent: -9999px;
 }
 
 .socials__icon {
   @include absolute-center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
 }
 
 $socials: fb, vk, tw;
@@ -58,7 +49,7 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 
 .header__right {
   width: 50%;
-  float: right;
+  float: left;
 }
 
 .address {
@@ -71,7 +62,6 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
     @include inlineblock(middle);
     margin-right: 9px;
   }
-
 }
 
 .phone {
@@ -86,16 +76,13 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
     margin-right: 11px;
     @include get-sprite($misc-sprite, telephone);
   }
-
 }
 
-/******  header-bottom  ****/
+/* --------- header - bottom --------- */
 
 .header__bottom {
   background: #f4f4f4;
   padding: 29px 0;
-  width: 1349px;
-  height: 94px;
 }
 
 .logo {
@@ -115,8 +102,8 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 
 .search {
   float: left;
-  margin-left: 50px;
   margin-right: 50px;
+  margin-left: 56px;
 }
 
 .menu {
@@ -129,12 +116,10 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
   line-height: 18px;
   color: $black;
   @include open-sans(semibold);
-  text-decoration: none;
 
   &:hover {
     color: $orange;
   }
-
 }
 
 .menu__item {
@@ -144,7 +129,6 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
   &:first-child {
     margin-left: 0;
   }
-
 }
 
 .search__form-input {
@@ -161,20 +145,195 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
   background: $orange;
   color: #ffffff;
   @include open-sans(semibold);
-  border: 0 none;
   @include border-radius(0 5px 5px 0);
-
-  &:after {
-    content: "";
-    @include absolute-center();
-    width: 0;
-    height: 0;
-    @include border-radius(50%);
-    background: orange;
-    @include transition(.3s);
-  }
-
+  border: 1px solid $orange;
 }
+
+
+
+
+//.header {
+//  background: $white;
+//}
+//
+///* ============== header-top ============= */
+//
+//.header__top {
+//
+//  border-bottom: 1px solid #ebedef;
+//  padding: 23px 0;
+//  /*width: 100%;
+//  max-width: 1105px;
+//  margin: 0 auto;
+//  height: 100%;*/
+//
+//}
+//
+//.socials__item {
+//  @include inlineblock(middle);
+//  margin-left: 12px;
+//  margin-bottom: 28px;
+//
+//  &:first-child {
+//    margin-left: 0;
+//  }
+//
+//}
+//
+//.socials__link {
+//  display: block;
+//  width: 26px;
+//  height: 26px;
+//  @include border-radius(50%);
+//  background: #333333;
+//  position: relative;
+//  text-indent: -9999px;
+//}
+//
+//.socials__icon {
+//  @include absolute-center;
+//  top: 0;
+//  bottom: 0;
+//  left: 0;
+//  right: 0;
+//  position: absolute;
+//}
+//
+//$socials: fb, vk, tw;
+//$socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
+//
+//@each $social in $socials {
+//  .socials__item_#{$social} {
+//    .socials__icon {
+//      @include get-sprite($socials-map, $social);
+//    }
+//  }
+//}
+//
+//.header__left {
+//  width: 50%;
+//  float: left;
+//}
+//
+//.header__right {
+//  width: 50%;
+//  float: right;
+//}
+//
+//.address {
+//  @include inlineblock(middle);
+//  margin-right: 65px;
+//
+//  &:before {
+//    content: '';
+//    @include get-sprite($misc-sprite, map);
+//    @include inlineblock(middle);
+//    margin-right: 9px;
+//  }
+//
+//}
+//
+//.phone {
+//  @include inlineblock(middle);
+//  color: $black;
+//  text-decoration: none;
+//  margin-right: 25px;
+//
+//  &:before {
+//    content: '';
+//    @include inlineblock(middle);
+//    margin-right: 11px;
+//    @include get-sprite($misc-sprite, telephone);
+//  }
+//
+//}
+//
+///******  header-bottom  ****/
+//
+//.header__bottom {
+//  background: #f4f4f4;
+//  padding: 29px 0;
+//  width: 1349px;
+//  height: 94px;
+//}
+//
+//.logo {
+//  float: left;
+//}
+//
+//.logo__img {
+//  display: block;
+//  max-width: 250px;
+//}
+//
+//.logo__text {
+//  position: absolute;
+//  top: 0;
+//  left: -9999px;
+//}
+//
+//.search {
+//  float: left;
+//  margin-left: 50px;
+//  margin-right: 50px;
+//}
+//
+//.menu {
+//  float: left;
+//  padding-top: 8px;
+//}
+//
+//.menu__link {
+//  font-size: 16px;
+//  line-height: 18px;
+//  color: $black;
+//  @include open-sans(semibold);
+//  text-decoration: none;
+//
+//  &:hover {
+//    color: $orange;
+//  }
+//
+//}
+//
+//.menu__item {
+//  @include inlineblock();
+//  margin-left: 28px;
+//
+//  &:first-child {
+//    margin-left: 0;
+//  }
+//
+//}
+//
+//.search__form-input {
+//  border: 1px solid #dee1e4;
+//  @include border-radius(5px);
+//  padding: 8px 15px;
+//  width: 259px;
+//  margin-right: -7px;
+//}
+//
+//.search__form-submit {
+//  width: 78px;
+//  height: 36px;
+//  background: $orange;
+//  color: #ffffff;
+//  @include open-sans(semibold);
+//  border: 0 none;
+//  @include border-radius(0 5px 5px 0);
+//
+//  &:after {
+//    content: "";
+//    @include absolute-center();
+//    width: 0;
+//    height: 0;
+//    @include border-radius(50%);
+//    background: orange;
+//    @include transition(.3s);
+//  }
+//
+//}
 
 
 

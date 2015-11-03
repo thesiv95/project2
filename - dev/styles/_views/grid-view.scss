@@ -101,7 +101,12 @@
   }
 
   .products__desc-options {
+    display: block;
     margin-bottom: 3px;
+  }
+
+  .products__desc-text {
+    display: none;
   }
 
   .products__rating {
