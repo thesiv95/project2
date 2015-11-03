@@ -273,6 +273,6 @@ $(document).ready(function() {
 
     }); // end filter__reset-rb
 
-    $('.attention-text').columnize({ width: 500 });
+    if ($('.attention-text').length) {$('.attention-text').columnize({ width: 500 })};
 
 }); //-> ready end
