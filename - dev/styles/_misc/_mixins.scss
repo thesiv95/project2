@@ -106,5 +106,19 @@
 	}
 }
 
+/* ---- ellipsis aka многоточия ------ */
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url( 'bindings.xml#ellipsis' );
+
+  /* http://habrahabr.ru/post/91500/ */
+
+}
+
+
 
 

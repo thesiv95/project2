@@ -1,15 +1,17 @@
 <!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html>
+<!--[if lte IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html lang="ru-RU" class="no-js">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Главная страница (main.psd)</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>COOLTECH</title>
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
-		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
+		<meta name="description" content="Cooltech - лучший интернет-магазин в мире, даже если кто-то считает иначе">
+		<meta name="keywords" content="cooltech, shop, electro, техника, проект, второй, siv, дедлайн">
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, print">
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, print">
 		<script src="/js/_vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	<body>
@@ -41,8 +43,8 @@
 								<div class="logo__text">cooltech</div></a>
 							<div class="search">
 								<form class="search__form">
-									<input name="" type="text" placeholder="Что будем искать" class="search__form-input">
-									<input name="" type="submit" value="Найти" class="search__form-submit">
+									<input name="srch_i" type="text" placeholder="Что будем искать" class="search__form-input">
+									<input name="srch_s" type="submit" value="Найти" class="search__form-submit">
 								</form>
 							</div>
 							<div class="menu">
@@ -70,14 +72,15 @@
 				</nav>
 				<div class="breadcrumbs">
 					<div class="container">
-						<ul class="breadcrumbs__list"></ul>
-						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-						<li class="breadcrumbs__item active"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item active"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+						</ul>
 					</div>
 				</div>
 				<article class="content-wrapper">
 					<div class="container">
-						<div class="main-title">Мобильные телефоны</div>
+						<h4 class="main-title">Мобильные телефоны</h4>
 						<div class="main-content">
 							<div class="sidebar">
 								<div class="categories">
@@ -94,16 +97,12 @@
 												<ul class="filter__choose">
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-label">Во всех магазинах</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-label">Во всех магазинах</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-label">В ближайшем ко мне магазине</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-label">В ближайшем ко мне магазине</span>
 														</label>
 													</li>
 												</ul>
@@ -115,37 +114,27 @@
 												<ul class="filter__choose filter__choose_checkboxes">
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="checkbox" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Lenovo</div>
+															<input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Lenovo</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="checkbox" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Apple</div>
+															<input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Apple</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="checkbox" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Samsung</div>
+															<input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Samsung</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="checkbox" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Asus</div>
+															<input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Asus</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="checkbox" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Motorola</div>
+															<input name="location" type="checkbox" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Motorola</span>
 														</label>
 													</li>
 												</ul>
@@ -159,11 +148,11 @@
 													<div class="filter__slider-displays">
 														<div class="filter__slider-left">
 															<div class="filter__slider-text">от</div>
-															<input name="" type="text" placeholder="" value="" class="filter__slider-input filter__slider-input_from">
+															<input name="inp_from" type="text" placeholder="" value="" class="filter__slider-input filter__slider-input_from">
 														</div>
 														<div class="filter__slider-right">
 															<div class="filter__slider-text">до</div>
-															<input name="" type="text" placeholder="" value="" class="filter__slider-input filter__slider-input_to">
+															<input name="inp_to" type="text" placeholder="" value="" class="filter__slider-input filter__slider-input_to">
 														</div>
 													</div>
 												</div>
@@ -195,37 +184,27 @@
 												<ul class="filter__choose filter__choose_checkboxes">
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Android</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Android</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">iOS</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">iOS</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Windows Mobile</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Windows Mobile</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Symbian</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Symbian</span>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
-															<div class="filter__choose-elem"></div>
-															<div class="filter__choose-text">Custom</div>
+															<input name="location" type="radio" class="filter__choose-input"><span class="filter__choose-elem"></span><span class="filter__choose-text">Custom</span>
 														</label>
 													</li>
 												</ul>
@@ -242,8 +221,8 @@
 											<div class="sort__title">Сортировать по</div>
 											<div class="sort__select">
 												<select class="sort__select-elem">
-													<option value="">по цене</option>
-													<option value="">по популярности</option>
+													<option value="sort_opt">по цене</option>
+													<option value="sort_opt">по популярности</option>
 												</select>
 											</div>
 										</div>
@@ -879,8 +858,8 @@
 		<script>
 			window.jQuery || document.write('<script src="/js/_vendors/jquery-1.11.3.min.js"><\/script>');
 			
+			
 		</script>
-		<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 		<script src="js/plugins.min.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>

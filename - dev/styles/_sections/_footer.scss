@@ -1,6 +1,8 @@
 .footer {
-  background: url("/img/bg/footer_bgpic.png") center center;
-  position: relative;
+  min-width: 1105px;
+  padding-left: 78px;
+  padding-right: 78px;
+  background: url("../img/bg/footer_bg.png") repeat-x;
 }
 
 .footer__top {
@@ -29,7 +31,7 @@
 
 
 .footer {
-  margin-bottom: 21px;
+
 
   .socials__link {
     width: 45px;
@@ -91,7 +93,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 1px solid #494949;
+  border: 1px solid #494949;
   text-align: center;
   color: $white;
   font-size: 12px;

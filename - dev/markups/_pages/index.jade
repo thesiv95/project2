@@ -1,12 +1,12 @@
 extends ../main
 
 block title
-	| Главная страница (main.psd)
+	| COOLTECH
 
 block content
 	article.content-wrapper
 		.container
-			.main-title
+			h4.main-title
 				| Мобильные телефоны
 			.main-content
 
@@ -22,7 +22,7 @@ block content
 									select.sort__select-elem
 										- var options = ["по цене", "по популярности"]
 										each option in options
-											option(value="")= option
+											option(value="sort_opt")= option
 						.sort__right
 							.sort__title
 								| Вид каталога

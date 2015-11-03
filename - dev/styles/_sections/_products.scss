@@ -215,7 +215,10 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
 }
 
 .products__buy-btn {
+  width: 85px;
+  height: 22px;
   @include inlineblock;
+  @include ellipsis;
   text-decoration: none;
   padding: 9px 12px;
   @include open-sans(bold);
@@ -263,7 +266,7 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
     width: 7px;
     height: 7px;
     @include border-radius(50%);
-    color: #60ac49;
+    background-color: #60ac49;
     @include inlineblock(middle);
     margin-right: 8px;
   }

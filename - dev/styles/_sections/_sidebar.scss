@@ -92,6 +92,7 @@
 }
 
 .filter__title-link {
+  display: block;
   color: $black;
   font-size: 16px;
   line-height: 18px;
@@ -170,6 +171,7 @@
   .filter__choose-input {
     &:checked + .filter__choose-elem {
       background: $orange;
+      opacity: 1;
     }
 
 
@@ -187,17 +189,18 @@
     background: $grey;
     @include transition(.3s);
     border: none;
+    opacity: 1;
 
     &:after {
       content: '';
       display: block;
       @include absolute-center;
-      opacity: 0;
       @include transition(.3s);
       @include get-sprite($misc-sprite, checkbox);
       @include border-radius(0);
-      width: 10px !important;
-      height: 16px !important;
+      width: 20px !important;
+      height: 20px !important;
+      opacity: 1;
     }
 
   }
