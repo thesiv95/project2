@@ -1,3 +1,15 @@
+.attention {
+  margin-top: -30px !important;
+
+  .attention-text {
+    margin-top: -9px !important;
+    margin-left: -48px !important;
+  }
+
+
+}
+
+
 .footer {
   min-width: 1105px;
   padding-left: 78px;
@@ -6,7 +18,8 @@
 }
 
 .footer__top {
-  padding-top: 34px;
+  padding-top: 33px;
+  padding-right: 15px;
 }
 
 .footer__left {
@@ -32,6 +45,11 @@
 
 .footer {
 
+
+  .container {
+    min-width: 1160px;
+    margin-top: 4px;
+  }
 
   .socials__link {
     width: 45px;
@@ -101,7 +119,5 @@
 }
 
 .footer__copyright {
-  padding: 8px 0;
+  padding: 6px 0;
 }
-
-/*44-51*/

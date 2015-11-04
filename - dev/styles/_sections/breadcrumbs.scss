@@ -1,3 +1,13 @@
+.breadcrumbs {
+
+  .container {
+    width: 1194px;
+    margin-top: -5px;
+  }
+
+}
+
+
 .breadcrumbs__item {
   @include inlineblock(middle);
   font-size: 14px;

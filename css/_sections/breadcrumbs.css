@@ -1,19 +1,23 @@
 /*
 Error: Undefined mixin 'inlineblock'.
-        on line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss, in `inlineblock'
-        from line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss
+        on line 12 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss, in `inlineblock'
+        from line 12 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss
 
-1: .breadcrumbs__item {
-2:   @include inlineblock(middle);
-3:   font-size: 14px;
-4: 
-5:   &:before {
-6:     content: '';
-7:     @include inlineblock(middle);
+7: 
+8: }
+9: 
+10: 
+11: .breadcrumbs__item {
+12:   @include inlineblock(middle);
+13:   font-size: 14px;
+14: 
+15:   &:before {
+16:     content: '';
+17:     @include inlineblock(middle);
 
 Backtrace:
-C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss:2:in `inlineblock'
-C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss:2
+C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss:12:in `inlineblock'
+C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss:12
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
@@ -69,4 +73,4 @@ C:/Ruby21-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'inlineblock'.\A         on line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss, in `inlineblock'\A         from line 2 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss\A \A 1: .breadcrumbs__item {\A 2:   @include inlineblock(middle);\A 3:   font-size: 14px;\A 4: \A 5:   &:before {\A 6:     content: '';\A 7:     @include inlineblock(middle);"; }
+  content: "Error: Undefined mixin 'inlineblock'.\A         on line 12 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss, in `inlineblock'\A         from line 12 of C:/openserver/domains/loftschool-template/- dev/styles/_sections/breadcrumbs.scss\A \A 7: \A 8: }\A 9: \A 10: \A 11: .breadcrumbs__item {\A 12:   @include inlineblock(middle);\A 13:   font-size: 14px;\A 14: \A 15:   &:before {\A 16:     content: '';\A 17:     @include inlineblock(middle);"; }
