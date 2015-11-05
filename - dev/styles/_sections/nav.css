@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'inlineblock'.
-        on line 15 of nav.scss, in `inlineblock'
-        from line 15 of nav.scss
+        on line 33 of nav.scss, in `inlineblock'
+        from line 33 of nav.scss
 
-10: 
-11:   &:after {
-12:     content: "";
-13:     height: 0;
-14:     width: 100%;
-15:     @include inlineblock();
-16:     visibility: hidden;
-17:   }
-18: 
-19: }
-20: 
+28: 
+29:   &:after {
+30:     content: "";
+31:     height: 0;
+32:     width: 100%;
+33:     @include inlineblock();
+34:     visibility: hidden;
+35:   }
+36: 
+37: }
+38: 
 
 Backtrace:
-nav.scss:15:in `inlineblock'
-nav.scss:15
+nav.scss:33:in `inlineblock'
+nav.scss:33
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
@@ -82,4 +82,4 @@ C:/Ruby21-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'inlineblock'.\A         on line 15 of nav.scss, in `inlineblock'\A         from line 15 of nav.scss\A \A 10: \A 11:   &:after {\A 12:     content: \"\";\A 13:     height: 0;\A 14:     width: 100%;\A 15:     @include inlineblock();\A 16:     visibility: hidden;\A 17:   }\A 18: \A 19: }\A 20: "; }
+  content: "Error: Undefined mixin 'inlineblock'.\A         on line 33 of nav.scss, in `inlineblock'\A         from line 33 of nav.scss\A \A 28: \A 29:   &:after {\A 30:     content: \"\";\A 31:     height: 0;\A 32:     width: 100%;\A 33:     @include inlineblock();\A 34:     visibility: hidden;\A 35:   }\A 36: \A 37: }\A 38: "; }

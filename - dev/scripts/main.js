@@ -187,14 +187,26 @@ var Accordion = (function(){
 
 
 
-        if (!(container.hasClass('active'))) {
-            otherContent.slideUp().closest('.filter__item').removeClass('active');
+        //if (!(container.hasClass('active'))) {
+        //    otherContent.slideUp().closest('.filter__item').removeClass('active');
+        //    container.addClass('active');
+        //    content.stop(true, true).slideDown();
+        //    otherContent.slideUp().closest('.filter__item').removeClass('active');
+        //} else {
+        //    otherContent.slideUp().closest('.filter__item').addClass('active');
+        //    container.removeClass('active');
+        //    content.stop(true, true).slideUp();
+        //}
+
+        if (!container.hasClass('active')) {
+
             container.addClass('active');
             content.stop(true, true).slideDown();
         } else {
             container.removeClass('active');
             content.stop(true, true).slideUp();
         }
+
 
 
 

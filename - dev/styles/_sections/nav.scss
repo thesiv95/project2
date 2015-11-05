@@ -6,7 +6,12 @@
   .container {
     background: #ffffff;
     border-bottom: 2px solid #ebedef;
-    margin-top: 27px;
+    margin-top: 26px;
+    padding: 0px 166px 0 78px;
+    width: 100%;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
 }
@@ -14,6 +19,12 @@
 .nav__list {
   text-align: justify;
   font-size: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  max-width: 1075px;
+  margin: 0 auto;
 
   &:after {
     content: "";

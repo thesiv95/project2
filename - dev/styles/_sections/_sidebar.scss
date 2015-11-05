@@ -44,7 +44,7 @@
   box-sizing: border-box;
 }
 
-/****** Filter ������ *********/
+/****** Filter content *********/
 
 .filter {
   background-color: $white;
@@ -52,7 +52,7 @@
 
 .filter__content {
   display: none;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 
@@ -67,6 +67,8 @@
     &:first-child {
       border-top: 0 none;
     }
+
+
 
     &.active {
       .filter__title {
@@ -90,19 +92,22 @@
     @include get-sprite($select-arrow-map, to-bottom);
     position: absolute;
     top: 7px;
-    right: 10px;
+    right: -8px;
+    right: -8px;
   }
 
 }
 
 .filter__title-link {
   display: block;
+  width: inherit;
   color: $black;
   font-size: 16px;
   line-height: 18px;
   @include open-sans(semibold);
-  margin-bottom: 18px;
   text-decoration: none;
+
+
 }
 
 .filter__choose-item {
