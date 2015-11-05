@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'inlineblock'.
-        on line 46 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss, in `inlineblock'
-        from line 46 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss
+        on line 51 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss, in `inlineblock'
+        from line 51 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss
 
-41:   }
-42: 
-43:   .products__info {
-44:     border: 0 none;
-45:     padding-left: 0px;
-46:     @include inlineblock(middle);
-47:   }
-48: 
-49:   .products__info-bottom {
-50:     position: static;
+46:   }
+47: 
+48:   .products__info {
+49:     border: 0 none;
+50:     padding-left: 0px;
 51:     @include inlineblock(middle);
+52:   }
+53: 
+54:   .products__info-bottom {
+55:     position: static;
+56:     @include inlineblock(middle);
 
 Backtrace:
-C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss:46:in `inlineblock'
-C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss:46
+C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss:51:in `inlineblock'
+C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss:51
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
@@ -84,4 +84,4 @@ C:/Ruby21-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'inlineblock'.\A         on line 46 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss, in `inlineblock'\A         from line 46 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss\A \A 41:   }\A 42: \A 43:   .products__info {\A 44:     border: 0 none;\A 45:     padding-left: 0px;\A 46:     @include inlineblock(middle);\A 47:   }\A 48: \A 49:   .products__info-bottom {\A 50:     position: static;\A 51:     @include inlineblock(middle);"; }
+  content: "Error: Undefined mixin 'inlineblock'.\A         on line 51 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss, in `inlineblock'\A         from line 51 of C:/openserver/domains/loftschool-template/- dev/styles/_views/line-view.scss\A \A 46:   }\A 47: \A 48:   .products__info {\A 49:     border: 0 none;\A 50:     padding-left: 0px;\A 51:     @include inlineblock(middle);\A 52:   }\A 53: \A 54:   .products__info-bottom {\A 55:     position: static;\A 56:     @include inlineblock(middle);"; }

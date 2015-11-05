@@ -52,7 +52,7 @@
 
 .filter__content {
   display: none;
-  margin-top: 22px;
+  margin-top: 17px;
 }
 
 
@@ -93,7 +93,6 @@
     position: absolute;
     top: 7px;
     right: -8px;
-    right: -8px;
   }
 
 }
@@ -106,6 +105,7 @@
   line-height: 18px;
   @include open-sans(semibold);
   text-decoration: none;
+  margin-top: 4px;
 
 
 }
@@ -272,6 +272,6 @@
 
 .filter__slider-text {
   @include inlineblock(middle);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
 }

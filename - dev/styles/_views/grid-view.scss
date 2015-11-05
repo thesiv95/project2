@@ -27,6 +27,11 @@
 
   .products__slideshow-display {
     @include inlineblock;
+
+  }
+
+  .products__slideshow-thumbs {
+
   }
 
   .products__slideshow-item {
@@ -49,8 +54,8 @@
     position: static;
     @include clearfix;
     border: 0 none;
-    margin-top: 10px;
-    padding: 0 6px;
+    margin-top: -5px;
+    padding: 0px 3px;
   }
 
   .products__article {
@@ -71,14 +76,25 @@
     text-align: center;
   }
 
+  .products__price {
+    color: #000;
+    font-size: 20px;
+    line-height: 8px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
   .products__buy-btn {
     margin-bottom: 0;
     float: right;
+    font-size: 15px;
+    padding: 9px 11px;
   }
 
   .products__avaliability {
     float: left;
-    padding-top: 15px;
+    padding-top: 11px;
   }
 
   .products__option-item {
@@ -111,6 +127,15 @@
 
   .products__rating {
     margin-bottom: 15px;
+  }
+
+  .products__rating-stars {
+    margin-right: -8px;
+  }
+
+  .products__rating-amount {
+    margin-left: 14px;
+
   }
 
 

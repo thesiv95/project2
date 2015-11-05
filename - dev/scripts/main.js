@@ -285,6 +285,20 @@ $(document).ready(function() {
 
     }); // end filter__reset-rb
 
-    if ($('.attention-text').length) {$('.attention-text').columnize({ width: 500 })};
+    if ($('.attention-text').length) {$('.attention-text').columnize({ width: 500 })};//end attention text
+
+    if ($('.filter__colors-item').length) {
+        $('.filter__colors-item').on('click', function(e){
+            e.preventDefault();
+        })
+    };//end filter__colors-item
+
+    if ($('.products__buy-btn').length) {
+        $('.products__buy-btn').on('click', function(e){
+            e.preventDefault();
+        })
+    };//end products__buy-btn
+
+
 
 }); //-> ready end
