@@ -1,8 +1,25 @@
+/*!!!*/
+body {
+  width: 100%;
+  height: 100% !important;
+  background-color: #f4f4f4;
+  word-wrap: break-word;
+}
+/*!!!*/
+
 .header {
   background: #ffffff;
 }
 
-
+/*!!!*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+  min-width: 1125px;
+}
+/*!!!*/
 
 /* --------- header - top --------- */
 

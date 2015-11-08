@@ -8,7 +8,12 @@
 
 .main-content {
   @include clearfix;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  margin: 0 auto;
 }
 
 .content {

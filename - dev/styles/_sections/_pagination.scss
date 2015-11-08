@@ -4,6 +4,10 @@
   @include inlineblock;
 }
 
+.pagination__list {
+  margin-top: 25px;
+}
+
 .pagination__item {
   width: 26px;
   height: 26px;
